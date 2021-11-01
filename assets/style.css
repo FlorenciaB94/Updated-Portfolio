@@ -1,0 +1,186 @@
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* My Variables */
+:root {
+  --main-font-style: "Urbanist", sans-serif;
+}
+/* Background color */
+body {
+  background-color: #f7ede2;
+}
+/* NavBar Styling */
+.animated-header {
+  padding: 20px;
+  font-family: var(--main-font-style);
+  color: #ffffff;
+}
+.animated-header h1 {
+  display: inline-block;
+  font-size: 50px;
+  color: #f28482;
+}
+
+.animated-header nav {
+  padding-top: 20px;
+  margin-right: 15px;
+  float: right;
+  font-family: var(--main-font-style);
+  font-size: 25px;
+}
+
+.animated-header nav ul {
+  list-style-type: none;
+}
+
+.animated-header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+a {
+  color: #f28482;
+  text-decoration: underline;
+}
+a:hover {
+  color: #84a59d;
+}
+/* Animated Banner */
+.animated-header {
+  width: 100%;
+  height: 500%;
+}
+
+.animated-header {
+  background: linear-gradient(-45deg, #f6bd60, #f5cac3, #f7ede2);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Columns and rows for main sections */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* About Me section */
+.aboutMe {
+  margin-top: 35px;
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: var(--main-font-style);
+  background-color: #f5cac3;
+  color: #ffffff;
+}
+h2 {
+  color: #84a59d;
+  font-size: 55px;
+}
+img {
+  margin-left: 150px;
+}
+p {
+  color: #84a59d;
+}
+/* Work section */
+.work {
+  margin-top: 35px;
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 600px;
+  font-family: var(--main-font-style);
+  background-color: #f5cac3;
+  color: #ffffff;
+}
+h3 {
+  color: #84a59d;
+  font-size: 60px;
+}
+.work img {
+  height: 200px;
+  width: 300px;
+}
+img:hover {
+  color: #84a59d;
+}
+.column4 {
+  display: none;
+}
+
+/* Resume section */
+.resume {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  padding: 20px;
+  height: 100px;
+  font-family: var(--main-font-style);
+  background-color: #f5cac3;
+  color: #ffffff;
+}
+h5 {
+  color: #84a59d;
+  font-size: 55px;
+}
+a #drive-link {
+  margin-top: 50px;
+}
+
+/* Contact section */
+.contact {
+  margin-top: 35px;
+  margin-bottom: 20px;
+  padding: 20px;
+  height: 100px;
+  font-family: var(--main-font-style);
+  background-color: #f5cac3;
+  color: #ffffff;
+}
+h4 {
+  color: #84a59d;
+  font-size: 55px;
+}
+/* Media Query */
+/* Small devices (landscape phones, 576px and up)*/
+/* @media (min-width: 576px) { 
+      .animated-header{
+          text-align: center;
+      }
+      .animated-header nav {
+          flex-direction: column;
+      }
+      .animated-header nav ul {
+          flex-direction: column;
+      } */
+
+/* Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) {
+      .animated-header{
+          text-align:center;
+      }
+      .animated-header nav {
+          flex-direction: column;
+      }
+      .animated-header nav ul {
+          flex-direction: column;
+      }
+  } */
